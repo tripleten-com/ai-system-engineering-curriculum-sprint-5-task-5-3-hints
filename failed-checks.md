@@ -90,13 +90,13 @@ The CI workflow file must stay exactly as the template supplied it. Compare your
 
 ## In this Task
 
-<details><summary>The `start` step times out</summary>
+<details><summary>The <code>start</code> step times out</summary>
 
 Is your agent server healthy? Read its log and `docker compose ps`. CI starts the stack from a fresh clone: does your service need anything that only exists on your machine?
 
 </details>
 
-<details><summary>`poe demo` fails on the platform but passes for you</summary>
+<details><summary><code>poe demo</code> fails on the platform but passes for you</summary>
 
 Does the demo create its own exception, and does it run on a freshly started stack? Does it exit 0 only when the run ends `finished`?
 

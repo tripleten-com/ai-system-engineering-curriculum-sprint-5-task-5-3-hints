@@ -5,8 +5,8 @@ These hints help you get unstuck on Task 3 without giving you the answer. Each o
 ## How to use them
 
 - **If a check failed:** start with [When a check fails](failed-checks.md). Find the check the platform named under **Errors**.
-- **If you're stuck on a Step:** open that Step's file below and find the problem that sounds like yours.
-- **Open one hint at a time:** each problem has up to three hints, from a wide question to a narrow one. Stop as soon as you can move on.
+- **If you're stuck on a Step:** open that Step's file below. Read **The idea** and **What's expected** first: they explain what the Step is about and what done looks like. Then find the problem under **When you're stuck** that sounds like yours.
+- **Open one move at a time:** each problem has three to five moves, from a wide question to the approach in words. Stop as soon as you can move on.
 - **Before you submit:** read [Before you submit](before-you-submit.md). It turns the review questions into checks on your own work.
 
 If the hints don't help, contact your instructor.
