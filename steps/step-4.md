@@ -28,25 +28,25 @@ The demo and your dev command do the same work: start a run on the server and re
 
 ### The demo exits 0 even when the run was refused
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Where does your demo decide its exit code?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Point the demo at your refusal script once. What exit code do you get?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Does the demo compare the final status with the one a success should have?
 
 </details>
 
-<details><summary>Move 4</summary>
+<details><summary>Hint 4</summary>
 
 The approach: after the summary prints, compare the status with `finished`. If it matches, exit 0. If not, print which status came back and why that fails the demo, then exit non-zero.
 
@@ -54,19 +54,19 @@ The approach: after the summary prints, compare the status with `finished`. If i
 
 ### The demo works once, then fails
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Does the demo create its own exception, or reuse an id from an earlier run?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Run it on a freshly started stack. What does it need that only an earlier run left behind?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Read what the scenario command runs in `pyproject.toml`. Call the same code from the demo, or run that command and read the id it prints.
 
@@ -74,19 +74,19 @@ Read what the scenario command runs in `pyproject.toml`. Call the same code from
 
 ### The summary gets lost in the output
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Read only the last ten lines the demo prints. Do they hold the whole record?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Does the demo read the exception again after the run? Is the summary printed after that read?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Move every progress line before the run starts, or before the final read, and print the summary as the very last thing.
 
@@ -94,19 +94,19 @@ Move every progress line before the run starts, or before the final read, and pr
 
 ### The demo and the dev command disagree
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Do they share the code that starts a run and reads its steps, or does each have its own copy?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Which copy did you change last?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Move the shared part into one function both commands call. The demo only adds its fixed script, a fresh exception and the verdict.
 

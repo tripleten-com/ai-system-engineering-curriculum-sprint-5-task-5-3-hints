@@ -39,19 +39,19 @@ Assert only the fields a requirement names. A handler returns what changed, and 
 
 ### Tests that build the adapter fail with a settings error
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Which setting does the error name?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Did you set the worker's three variables for the tests, or only in your shell?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Find how `tests/unit/worker/test_bootstrap.py` sets them with a fixture, and use the same kind of fixture in your test file.
 
@@ -59,19 +59,19 @@ Find how `tests/unit/worker/test_bootstrap.py` sets them with a fixture, and use
 
 ### The "always stop" break doesn't fail any test
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Which direction of the rule do your tests check?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Would a rule that always stops pass every one of them?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Add a test that builds a state that's still running and checks the rule sends it to `propose`.
 
@@ -79,19 +79,19 @@ Add a test that builds a state that's still running and checks the rule sends it
 
 ### A test of an ending passes for the wrong reason
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Does the test assert the status and the halt reason, or only the status?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Make the tool-call handler end the run `finished`. Which of your tests fails?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Assert both fields for every ending, and send at least one of them through `act`, so the lookup is covered too.
 
@@ -99,19 +99,19 @@ Assert both fields for every ending, and send at least one of them through `act`
 
 ### A test breaks every time the state grows
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Does the test compare the whole returned mapping?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 Which fields does the requirement for that test actually name?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Assert only those fields, each on its own line, so a new field elsewhere doesn't break a test that never cared about it.
 
@@ -119,19 +119,19 @@ Assert only those fields, each on its own line, so a new field elsewhere doesn't
 
 ### The recovery-shaped run's step count is wrong in your test
 
-<details><summary>Move 1</summary>
+<details><summary>Hint 1</summary>
 
 Where does your test read the step count: from the run's result, or from the script's length?
 
 </details>
 
-<details><summary>Move 2</summary>
+<details><summary>Hint 2</summary>
 
 When does the run stop: when the script runs out, or when the rule says so?
 
 </details>
 
-<details><summary>Move 3</summary>
+<details><summary>Hint 3</summary>
 
 Read the step count from what the run returns, and expect one step for the recovery-shaped script.
 
